@@ -1,0 +1,95 @@
+.menuBackground{
+  opacity: .4;
+  position: absolute;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 110%;
+}
+.title {
+  position: absolute;
+  width: 300px;
+  left: 36.1%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body, html{
+
+  height: 100%;
+
+}
+
+.wrapping{
+
+  height: 100%;
+  display: flex;
+
+
+}
+
+.songEdition{
+  position: absolute;
+  left:35%;
+  top:39%;
+  font-family:"Audiowide",sans-serif;
+  font-size: 50px;
+}
+.guess{
+  color: white;
+  position: absolute;
+  left: 33%;
+  top: 55%;
+  font-family: "Dosis",sans-serif;
+}
+.menu{
+  color: white;
+  background-color: black;
+
+}
+.play{
+  background-color: rgb(89, 172, 81);
+  font-family: "Dosis",sans-serif;
+  border: none;
+  color: white;
+  width: 225px;
+  height: 45px;
+  border-radius: 19px;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  cursor: pointer;
+}
+.devs, .cons, .net, .email{
+  color: white;
+  position: absolute;
+  font-family: "Dosis",sans-serif;
+  font-size: 8px;
+}
+.devs{
+  left: 1%;
+
+  top: 102%;
+}
+.cons{
+  left: 1%;
+
+  top: 105%;
+}
+.net{
+  color: white;
+  position: absolute;
+  left: 46%;
+  top: 90%;
+  font-size: 15px;
+}
+.email{
+ top: 105%;
+ right: 1%;
+}
+
+

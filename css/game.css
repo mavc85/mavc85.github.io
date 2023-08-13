@@ -1,0 +1,217 @@
+html{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+}
+body{
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  font-family: "Dosis",sans-serif;
+  color: white;
+  height: 100%;
+  width:  100%;
+  display: flex;
+}
+
+.wrapLeft{
+  box-sizing: border-box;
+  position: relative;
+  width: 50%;
+  height: 100%;
+
+
+
+}
+.wrapRight{
+  box-sizing: border-box;
+  position: relative;
+  width: 50%;
+  height: 100%;
+
+
+}
+
+
+
+.songTitleLeft{
+  font-weight: bolder;
+    font-size: 37px;
+    color: white;
+    position: absolute;
+    font-family: "Dosis",sans-serif;
+    top: 22%;
+    width:  50%;
+    text-align: center;
+}
+
+p.songTitleRight {
+  font-weight: bolder;
+  font-size: 37px;
+  color: white;
+  position: absolute;
+  font-family: "Dosis", sans-serif;
+  top: 22%;
+  width: 50%;
+  text-align: center;
+}
+
+.isRankedLeft{
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  position: absolute;
+  top: 37%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.isRankedRight{
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  position: absolute;
+  top: 200px;
+  right: 25%;
+  transform:  translate(50%, 50%);
+}
+.songRanking{
+
+  font-weight: bold;
+  font-size: 60px;
+  color: rgb(255, 249, 137);
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+.inRollingStones{
+  position: absolute;
+  top: 57%;
+  font-weight:lighter;
+  left: 25%;
+  transform: translate(-50%, 0%);
+}
+
+.vs {
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  text-align: center;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: bolder;
+}
+.higher {
+  height: 50px;
+  width: 160px;
+  font-weight: bold;
+  font-family: "Dosis",sans-serif;
+  color:rgb(255, 249, 137);
+  background-color: transparent;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 30px;
+  border-style: solid;
+  font-size: 18px;
+  position: absolute;
+  cursor:pointer;
+  top: 52%;
+  right: 14%;
+  text-align: center;
+  transition: background-color .15s, color .15s;  
+}
+.higher::after{
+  content: "\25B2";
+  padding-left: 20px;
+  color: white;
+}
+.higher:hover{
+  background-color: white;
+  color: black; 
+}
+.higher:hover::after{
+  content: "\25B2";
+  padding-left: 20px;
+  color: black; 
+  font-size: 20px;
+}
+
+.lower {
+  height: 50px;
+  width: 160px;
+  font-weight: bold;
+  font-family: "Dosis",sans-serif;
+  color:rgb(255, 249, 137);
+  background-color: transparent;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 30px;
+  border-style: solid;
+  font-size: 18px;
+  position: absolute;
+  cursor:pointer;
+  top: 62%;
+  right: 14%;
+  text-align: center;
+  transition: background-color .15s, color .15s;  
+}
+.lower::after{
+  content: "\25BC";
+  padding-left: 20px;
+  color: white;
+}
+.lower:hover{
+  background-color: white;
+  color: black; 
+}
+.lower:hover::after{
+  content: "\25BC";
+  padding-left: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+
+.than{
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  position: absolute;
+  top: 375px;
+  right: 17%;
+}
+
+.songCoverLeft{
+  width: 50%;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  z-index: -1;
+  opacity: .4;
+
+}
+.songCoverRight{
+  width: 50%;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  z-index: -1;
+  opacity: .4;
+}

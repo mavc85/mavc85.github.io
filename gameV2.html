@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Higher Or Lower: Song Edition</title>
+    <link rel="icon" type="image/x-icon" href="faviconhl.ico">
+
+    <link rel="stylesheet" href="css\gameV2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dosis"
+    />
+    <script src="js/indexV2.js"></script>
+  </head>
+
+
+
+  <body onload="firstCompare()">
+    <div class="wrap left" id = "wrap_left">
+      <div class="bg-container">
+        <img
+        class="coverLeft"
+        id="picLeft"
+        src=""
+      />
+      <p class = "scores" id="highscore">High Score: 0</p>
+      </div>
+      <div class="textContent-left">
+
+        <p class = "title" id = "LTitle"> </p> <p class = "title" id = "Lartist"></p> 
+        <p class = "ranked" id = "LRanked">is ranked</p>
+        <p class = "rank" id = "LRank"></p>
+        <p class = "in" id = "LIn">in <b><i> RollingStone's </i></b>Top 500 Greatest Songs of All Time</p>
+      </div>
+      <!--<div class = "snippet" id = "Lsnippet"></div>-->
+      <iframe class = "snippet" id = "Lsnippet" style="border-radius:12px" src="" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media *; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      
+    </div>
+    <div class = "versus-container">
+
+      <div class = "vs-circle">
+        <div class = "spacer-2"></div>
+        <b class = "vs">vs</b>
+        <div class = "spacer-2"></div>
+      </div>
+
+    </div>
+    <div class="wrap right" id = "wrap_right">
+      
+      <div class="bg-container">
+        <img
+        class="coverRight"
+        id="picRight"
+        src=""
+        />
+      </div>
+      <div class="textContent-right">
+
+        <p class = "title" id = "RTitle"></p> <p class = "title" id = "Rartist"></p> 
+        <p class = "ranked">is ranked</p>
+        <div id="buttons">
+          <button class="button" id = "higher" onClick="calculate('higher')">Higher</button>
+          <div class="spacer"></div>
+          <button class="button" id = "lower" onClick="calculate('lower')">Lower</button>
+        </div>
+        <div id = "scroll">500</div>
+        <p class = "than"></p>
+      </div>
+      <iframe class = "snippet" id = "Rsnippet" style="border-radius:12px" src="" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media *; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class = "wrap rightest" id = "extend">       
+      <div class="bg-container">
+        <img
+        class="coverOverflow"
+        id="picEx"
+        src="https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a"
+        />
+      </div>
+      <div class="textContent-right">
+
+        <p class = "title" id = "ExTitle"></p> <p class = "title" id = "Exartist"></p> 
+        <p class = "ranked">is ranked</p>
+        <div id="buttons">
+          <button class="button" id = "higher" onClick="">Higher</button>
+          <div class="spacer"></div>
+          <button class="button" id = "lower" onClick="">Lower</button>
+        </div>
+        <div id = "scroll">500</div>
+        <p class = "than"></p>
+      </div>
+      <iframe class = "snippet" id = "Exsnippet" style="border-radius:12px" src="" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media *; fullscreen; picture-in-picture" loading = "skip-lazy"></iframe>
+    </div>
+
+    <p class = "scores" id="score" >Score: 0</p>
+
+
+    <div id="game_over_container">
+      
+      <img
+          id="losingimage"
+          src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzB2MGFneDZudTl4amsxbWtxaWJnb28yOGpxM2FrZHU0cWduYmRzbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jSfiX3lj42RDG/200.gif"
+        />
+      <p class= "scores" >You scored: <p class= "scores" id ="finalscore">-1</p></p>
+          <a class="playlink" href="index.html"><button class="button1" id = "menu" >Back to menu</button></a>
+          <button class="button1" id = "again" onClick="firstCompare()">Play again</button>
+    </div>
+  </body>
+</html>
