@@ -839,7 +839,11 @@ var allsongs = [
   , "175", "I Only Have Eyes for You", "Flamingos", "1959", "https://i.scdn.co/image/ab67616d00001e02554d20be426f669d71596d4f"
   , "174", "Radio Free Europe", "R.E.M.", "1983", "https://i.scdn.co/image/ab67616d0000b273fe05afa9ef05c2ba87e0e860"
   , "173", "Marquee Moon", "Television", "1977", "https://i.scdn.co/image/ab67616d0000b27318b36d985b0ae01163ca9cf6"
+<<<<<<< HEAD
   , "172", "Mississippi Goddam", "Nina Simone", "1964", "https://i.scdn.co/image/ab67616d0000b273603eb67dcfafc91b63885d27"
+=======
+  , "172", "Mississippi Goddam", "Nina Simone", "1964", "https://i.scdn.co/image/ab67616d0000b273a62f89ed451a7e568404b106​​"
+>>>>>>> 0b1984ee444f10c2800c1bd5010760c0a7ed788c
   , "171", "What a Wonderful World", "Louis Armstrong", "1967", "https://i.scdn.co/image/ab67616d0000b273845a5660b804e5f3e821fbed"
   , "170", "In the Still of the Nite", "Five Satins", "1956", "https://i.scdn.co/image/ab67616d0000b2738db5db0c73ae6546ce768534"
   , "169", "American Girl", "Tom Petty", "1976", "https://i.scdn.co/image/ab67616d0000b2737e42a53ea7f2ad4f36ab23a5"
@@ -1151,9 +1155,61 @@ function newCompareV2() {
 
 }
 
+<<<<<<< HEAD
 
 function firstCompare() {
 
+=======
+/*function newCompare() {
+  xl = xr;
+  slide();
+  xr = xrr;
+  while (pastranks.includes(xr)) {
+    xrr = Math.floor(Math.random() * (500));
+  }
+  pastranks.push(xr);
+  var scoretext = document.getElementById("score");
+  var hs = document.getElementById("highscore");
+  var leftTitle = document.getElementById("LTitle");
+  var rightTitle = document.getElementById("RTitle");
+  var leftArtist = document.getElementById("Lartist");
+  var rightArtist = document.getElementById("Rartist");
+  var leftRank = document.getElementById("LRank");
+  var leftPic = document.getElementById("picLeft");
+  var rightPic = document.getElementById("picRight");
+  scoretext.innerText = "Score: " + score;
+  hs.innerText = "High Score: " + highscore;
+  //var rightSide = document.getElementById("wrap_right");
+  //var LeftPos = rightSide.offsetLeft;
+  //var RightPos = LeftPos + boxElement.offsetWidth;
+  //console.log("doing it");
+  leftRank.innerText = xl;
+  leftTitle.innerText = rightTitle.innerText;
+  rightTitle.innerText = getTitle(xr);
+  //console.log(getTitle(xr));
+
+  leftArtist.innerText = rightArtist.innerText;
+  rightArtist.innerText = "by " + getArtist(xr);
+  leftPic.src = rightPic.src;
+  rightPic.src = getAlbum(xr);
+
+  if (xl.toString().length == 1) {
+    leftRank.style.left = "22%";
+    leftRank.style.top = "140px";
+    leftRank.style.fontSize = "90px";
+    leftRank.innerText = xl;
+  } else if (xl.toString().length == 2) {
+    leftRank.style.left = "20%";
+    leftRank.style.top = "170px";
+    leftRank.style.fontSize = "75px";
+    leftRank.innerText = xl;
+  }
+  else { leftRank.innerText = xl; }
+}*/
+function firstCompare() {
+
+  //console.log("start of first Compare");
+>>>>>>> 0b1984ee444f10c2800c1bd5010760c0a7ed788c
 
   score = 0;
   document.getElementById("highscore").innerText = "High Score: " + highscore;
