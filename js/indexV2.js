@@ -1028,8 +1028,6 @@ function animateValue(start, end, duration) {
     obj.innerText = Math.floor(progress * (end - start) + start);
     if (obj.innerText == xr) {
       await sleep(1000);
-      butt.style.display = "flex";
-      obj.style.display = "none";
       scrolling = false;
     }
     if (progress < 1) {
@@ -1093,19 +1091,15 @@ function getSnippet(rank) {
 }
 
 function newCompareV2() {
-
-  //console.log("start of V2");
-
-  console.log(xl + " " + xr + " " + xrr);
-
-  xl = xr;
+  document.getElementById("buttons").style.display = "flex";
+  document.getElementById("scroll").style.display = "none";
+    xl = xr;
   xr = xrr;
   pastranks.push(xr);
   while (pastranks.includes(xrr)) {
     xrr = Math.floor(Math.random() * (500));
   }
   console.log(xl + " " + xr + " " + xrr);
-
   var scoretext = document.getElementById("score");
   var hs = document.getElementById("highscore");
   var leftTitle = document.getElementById("LTitle");
@@ -1148,18 +1142,16 @@ function newCompareV2() {
 
   //console.log("end of V2");
 
-
 }
-
-
 function firstCompare() {
-
-
   score = 0;
   document.getElementById("highscore").innerText = "High Score: " + highscore;
   document.getElementById("score").innerText = "Score: " + 0;
 
   document.getElementById("game_over_container").style.display = "none";
+  document.getElementById("buttons").style.display = "flex";
+  document.getElementById("scroll").style.display = "none";
+
 
 
   var leftTitle = document.getElementById("LTitle");
@@ -1240,7 +1232,7 @@ function lose() {
 
 }
 function win() {
-  //console.log("Wow, you win");
+  console.log("Wow, you win");
 }
 
 function slide() {
